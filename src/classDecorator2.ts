@@ -9,7 +9,7 @@ function classDecoratorFactory(arg: string) {
       private _age = 36;
 
       constructor(...args: any[]) {
-        super(args);
+        super(...args);
       }
 
       public print() {
