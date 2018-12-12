@@ -1,7 +1,7 @@
 function classDecorator<T extends { new (...args: any[]): {} }>(target: T) {
   return class extends target {
     constructor(...args: any[]) {
-      super(args);
+      super(...args);
     }
 
     public print() {
